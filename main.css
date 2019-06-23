@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito|Raleway|Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    background-color: #faf0be;
+    /*background-image: -webkit-linear-gradient(75deg, #bcd4e6 50%, #faf0be 50%);*/
+
+}
+.container{
+    text-align: center;
+    margin: 20px;
+}
+
+.formContainer{
+    border-radius: 5px;
+    height: 100%;
+    padding: 20px;
+    background-color: #bcd4e6;
+}
+
+#title{
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+#survey-form{
+	text-align: center;
+    padding: 20px;
+}
+
+.row{
+    margin: 5px 0;
+    display: block;
+}
+
+.tabLeft{
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.tabRight{
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+.dropdown {
+    height: 40px;
+    width: 280px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+.tabRight label {
+    margin-left:10px;
+}
+
+.tabRight div{
+    margin-bottom: 5px;
+}
+
+#submit {
+    color: #000;
+    background-color: #faf0be;
+    border-radius: 4px;
+    font-size: 1.5em;
+    height: 50px;
+    width: 150px;
+    margin: 10px auto 0 auto;
+    border: 0 solid;
+}

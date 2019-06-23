@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="title">Website Survey Form</h1>
+
+        <div class="formContainer">
+
+            <p id="description">Let me know how you like my repository.</p>
+
+            <!--Form Start Here-->
+
+            <form action="#" id="survey-form">
+                <div class="row">
+                    <div class="tabLeft"><label for="name-label">* Name :</label></div>
+                    <div class="tabRight"><input type="text" id="name-label" class="input-field" placeholder="Enter your Name" required></div>
+                </div>
+
+                <div class="row">
+                    <div class="tabLeft"><label for="number-label">* Age :</label></div>
+                    <div class="tabRight"><input type="number" id="number-label" class="input-field" placeholder="Enter your Age" required min="15" max="100"></div>
+                </div>
+
+                <div class="row">
+                    <div class="tabLeft"><label for="email-label">* Email :</label></div>
+                    <div class="tabRight"><input type="text" id="email-label" class="input-field" placeholder="Enter your Email" required></div>
+                </div>
+
+                <div class="row">
+                    <div class="tabLeft"><label for="dropdown">* what describe yor current position ? </label></div>
+                    <div class="tabRight">
+                        <select id="dropdown" name="currentPos" class="dropdown" >
+                        <option disabled value>Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="full-stack">Full-Stack Developer</option>
+                            <option value="mean-stack">MEAN stack Developer</option>
+                            <option value="web-designer">Web Designer</option>
+                            <option value="web-developer">Web Developer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="tabLeft">* How would you recommend to others :</div>
+                    <div class="tabRight" style="margin-top: 15px;">
+                        <div><input type="radio" name="radio-button" id="definitely" value="Definitely" required><label for="definitely">Definitely</label></div>
+                        <div><input type="radio" name="radio-button" id="maybe" value="Maybe" required><label for="maybe">Maybe</label></div>
+                        <div><input type="radio" name="radio-button" id="notSure" value="Not Sure" required><label for="notSure">Not Sure</label></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="tabLeft">* Things that should be improved :</div>
+                    <div class="tabRight" style="margin-top: 15px;">
+                        <div><input id="background" type="checkbox" value="1" required><label for="background">Background</label></div>
+                        <div><input id="style" type="checkbox" value="2" required><label for="style">Style</label></div>
+                        <div><input id="fonts" type="checkbox" value="3" required><label for="fonts">Fonts</label></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="tabLeft"><label for="comment">* Comment :</label></div>
+                    <div class="tabRight" style="margin-top: 10px;"><textarea class="input-field" id="comment" name="comment" style="height:50px;resize:vertical; width: 300px" placeholder="Enter your comment here"></textarea></div>
+                </div>
+
+                <button id="submit" type="submit">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
